@@ -2,7 +2,7 @@ const path = require('path')
 const config = {
   projectName: 'taro-vue3-template',
   date: '2022-6-8',
-  designWidth: 750,
+  designWidth: 375,
   deviceRatio: {
     640: 2.34 / 2,
     750: 1,

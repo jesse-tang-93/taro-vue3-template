@@ -24,6 +24,7 @@
     ],
     "paths":{
       "@/common/*" :["./src/common/*"],
+      "@/*":["src/*"]
     }
   },
   "exclude": [

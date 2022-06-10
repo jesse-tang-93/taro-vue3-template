@@ -1,7 +1,7 @@
 <template>
   <view>
     <text class="title">{{ counter.count }}</text>
-    <view class="button" @tap="onAdd">ADD</view>
+    <div class="button" @tap="onAdd">ADD</div>
   </view>
 </template>
 
@@ -13,7 +13,8 @@ export default {
   setup() {
     const counter = useCounterStore()
 
-    const onAdd = () => {
+    const onAdd = (e) => {
+      console.log(e)
       counter.count++
 
       // with autocompletion ✨

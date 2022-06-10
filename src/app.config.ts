@@ -17,7 +17,7 @@ export default {
   /**
    * 小程序端特有属性
    */
-  entryPagePath: "pages/home/index", // 指定小程序默认启动路径
+  entryPagePath: "pages/index/index", // 指定小程序默认启动路径
   debug: true, // 开启调试模式
   requiredBackgroundModes: ['audio','location'], // 后台运行时需要的权限类型-后台使用的能力
   // 接口权限相关设置

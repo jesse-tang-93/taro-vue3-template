@@ -9,6 +9,7 @@
 import { useCounterStore } from '../stores/counter'
 
 export default {
+  name: 'CounterPage',
   setup() {
     const counter = useCounterStore()
 

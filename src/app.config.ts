@@ -4,6 +4,7 @@ export default {
     'pages/home/index'
   ],
   window: {
+    enablePullDownRefresh: true, // 允许下拉刷新
     // 导航栏背景色
     navigationBarBackgroundColor: '#9da',
     navigationBarTitleText: '导航栏标题文字',

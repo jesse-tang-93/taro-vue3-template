@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "types": ["@tarojs/components/vue3"],
     "target": "es2017",
     "module": "commonjs",
     "removeComments": false,

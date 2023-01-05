@@ -2,7 +2,13 @@ const path = require('path')
 const config = {
   projectName: 'taro-vue3-template',
   date: '2022-6-8',
-  designWidth: 375,
+  designWidth: 375, // 设计稿尺寸
+  // designWidth (input) {
+  //   if (input.file.replace(/\\+/g, '/').indexOf('@nutui/nutui-taro') > -1) {
+  //     return 375
+  //   }
+  //   return 750
+  // },
   deviceRatio: {
     640: 2.34 / 2,
     750: 1,
@@ -13,8 +19,10 @@ const config = {
   outputRoot: 'dist',
   // Taro 插件配置
   plugins: ['@tarojs/plugin-html','taro-plugin-pinia'],
+  // 全局变量设置
   defineConstants: {
   },
+  // 文件 copy 配置
   copy: {
     patterns: [
     ],
@@ -22,6 +30,7 @@ const config = {
     }
   },
   framework: 'vue3',
+  // 给 sass-loader 传递选项，使得 nutui 按需加载
   sass:{
     data: `@import "@nutui/nutui-taro/dist/styles/variables.scss";`
   },
@@ -58,6 +67,7 @@ const config = {
           onePxTransform: true, // 开启1px转换
         }
       },
+      // 小程序端样式引用本地资源内联配置
       url: {
         enable: true,
         config: {
@@ -73,6 +83,7 @@ const config = {
       }
     }
   },
+  // h5 端专用配置
   h5: {
     publicPath: '/',
     staticDirectory: 'static',

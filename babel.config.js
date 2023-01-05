@@ -21,6 +21,7 @@ module.exports = {
             return `@nutui/nutui-taro/dist/packages/_es/${name}`;
           }
         },
+        // 按需加载组件样式
         "style": (name, file) => name.toLowerCase().replace('_es/', '') + '/index.scss',
         "camel2DashComponentName": false
       },

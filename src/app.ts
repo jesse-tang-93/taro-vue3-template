@@ -1,8 +1,10 @@
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
-import { NoticeBar } from '@nutui/nutui-taro';
+import { Tabbar, TabbarItem, NoticeBar } from '@nutui/nutui-taro';
 import './app.scss'
 
+// 创建 pinia 实例
+const pinia = createPinia();
 const App = createApp({
   onLaunch(options){
     // 获取程序启动时初始化参数，场景值、shareTicket、query、path、referrerInfo等等
@@ -19,6 +21,7 @@ const App = createApp({
   }
 })
 
-App.use(createPinia()).use(NoticeBar);
+// 挂载至 vue 根实例
+App.use(pinia).use(NoticeBar).use(Tabbar).use(TabbarItem);
 
 export default App

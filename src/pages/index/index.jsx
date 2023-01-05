@@ -1,6 +1,6 @@
 import { reactive } from 'vue'
 import { View, Text, Button } from '@tarojs/components'
-
+import "./index.scss"
 export default {
   name: 'IndexPage',
   components: {
@@ -20,7 +20,7 @@ export default {
 
     return () => {
       return (
-        <View>
+        <View className="home">
           <View><Text>{state.msg}</Text></View>
           <Button onTouchstart={() => handleClick(state.msg2)}>Confirm</Button>
         </View>
